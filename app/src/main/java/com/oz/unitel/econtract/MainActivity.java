@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         String pageName = "";
         String param = "";
 
+        android.webkit.CookieManager.getInstance().removeAllCookies(null);
+
         toto.setTotoWebViewListener(new OZTotoWebViewListener() {
             @Override
             public void onPageLoad(final OZTotoRuntime runtime) {
